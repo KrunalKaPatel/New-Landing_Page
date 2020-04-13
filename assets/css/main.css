@@ -1,0 +1,202 @@
+/* 
+- font-face
+- normalize/reset css
+- default css
+- theam css
+*/
+
+
+/* font-face start
+----------------------------*/
+@font-face
+{ 
+	font-family: 'Quicksand';
+	src:url('../fonts/Quicksand-Bold.eot') format('eot'), 
+		url('../fonts/Quicksand-Bold.svg') format('svg'), 	
+		url('../fonts/Quicksand-Bold.ttf') format('ttf'), 
+		url('../fonts/Quicksand-Bold.woff') format('woff'), 
+		url('../fonts/Quicksand-Bold.woff2') format('woff2');
+		font-weight: 700;
+}
+@font-face
+{ 
+	font-family: 'Quicksand';
+	src:url('../fonts/Quicksand-Regular.eot') format('eot'), 
+		url('../fonts/Quicksand-Regular.svg') format('svg'), 	
+		url('../fonts/Quicksand-Regular.ttf') format('ttf'), 
+		url('../fonts/Quicksand-Regular.woff') format('woff'), 
+		url('../fonts/Quicksand-Regular.woff2') format('woff2');
+		font-weight: 400;
+}
+@font-face
+{ 
+	font-family: 'Quicksand';
+	src:url('../fonts/Quicksand-Light.eot') format('eot'), 
+		url('../fonts/Quicksand-Light.svg') format('svg'), 	
+		url('../fonts/Quicksand-Light.ttf') format('ttf'), 
+		url('../fonts/Quicksand-Light.woff') format('woff'), 
+		url('../fonts/Quicksand-Light.woff2') format('woff2');
+		font-weight: 300;
+}
+
+
+/* reset css start
+----------------------------*/
+*{ box-sizing:border-box;}
+body{ padding:0; margin:0; scroll-behavior:smooth;}
+h1,h2,h3,h4,h5,h6{ margin:0; padding:0}
+figure{ padding:0; margin:0;}
+ul,li{ text-decoration:none; display:inline; margin:0; padding:0;}
+a{ text-decoration:none; transition: all 0.5s;}
+p{ margin:0; padding:0}
+
+
+/* default css
+----------------------------*/
+
+h1,h2,button
+{
+	text-transform: uppercase;
+}
+body{
+	font-family: 'Quicksand';
+	font-weight: 400;
+}
+.container
+{
+	width: 100%;
+	max-width: 1170px;
+	padding: 0px 10px
+}
+.titel:after
+{
+	content:"";
+	position: absolute;
+	width: 30px;
+	height: 3px;
+	background-color: #dd3b10;
+}
+
+
+/* header section
+----------------------------*/
+header
+{
+	background: transparent;
+	position: absolute;
+}
+header figure
+{
+	padding-top: 100px;
+	margin-left: 76px;
+}
+
+/* banner section
+----------------------------*/
+.hero-banner
+{
+	background-color: #212121;
+	padding-top: 75px;
+	padding-left: 21px;
+	margin-bottom: 87px;
+	position: relative;
+}
+.banner-image
+{
+
+}
+.banner-caption
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+/*	margin-top: 40px;
+	margin-left: 17px;*/
+	
+}
+.banner-caption h1,button
+{
+	color: #fff;
+}
+.banner-caption h1
+{
+	font-size: 70px;
+	letter-spacing: 15.6px;
+	margin-bottom: 55px;
+}
+.banner-caption button
+{
+	background-color: #dd3b10;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    border: none;
+    margin-left: 228px;
+    padding: 9.5px 47px;
+}
+
+/* recent project section
+----------------------------*/
+.project-bg
+{
+	background-color: #fff;
+}
+.project-container
+{
+	width: 100%;
+	max-width: 830px;
+}
+.project-container .titel h2
+{ 
+	margin-left: 21px;
+	letter-spacing: -1px;
+	padding-bottom: 22px;
+}
+.project-container .project-caption p
+{
+	padding-top: 25px;
+	font-size: 16px;
+	line-height: 28px;
+	color: #3d4347;
+	margin-bottom: 50px;
+}
+.recent-project-images
+{
+	margin-bottom: 100px;
+}
+.recent-project-images img
+{
+	position: relative;
+}
+.image-caption
+{
+	position:absolute; 
+	color:white; 
+	bottom: 0px;
+	width: 95.3%; 
+	background:rgba(29, 28, 41, 1.0); 
+	height:40px; 
+}
+.image-caption h5
+{
+	padding-top: 9px;
+	font-size: 18px;
+}
+
+
+
+/* creative-photos section */
+
+.creative-photos
+{
+	background-color: #222223;
+}
+.creative-photos-caption h2,p,button
+{
+	color: #fff;
+}
+.creative-photos-caption button
+{
+	border: 1px solid #fff;
+	background-color: 
+}
