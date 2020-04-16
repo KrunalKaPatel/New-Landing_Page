@@ -10,15 +10,17 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body>
 	<section id="pageWrapper">
 
+		<!-- Header -->
 		<header class="pageHeader">
-			<div class="container d-flex justify-content-center align-item-center">
-				<figure class="col-2">
-					<img src="assets/images/logo.png" class="siteLogo">
+			<div class="container">
+				<figure>
+					<a href="#" title="Logo"><img src="assets/images/logo.png" class="siteLogo" alt="Logo"></a>
 				</figure>
 			</div>
 		</header>
@@ -32,9 +34,9 @@
 						<figure>
 							<img src="assets/images/shutterstock.png">
 						</figure>
-						<div class="banner-caption d-flex flex-column justify-content-center">
-							<h1>photogaphy</h1>
-							<a href="#"><button>contact</button></a>
+						<div class="caption text-center">
+							<h1 class="bannerTitle">photogaphy</h1>
+							<a href="#" class="button" title="Contact">contact</a>
 						</div>
 					</div>
 				</div>
@@ -44,15 +46,15 @@
 			<section class="recent-project">
 				<div class="container d-flex justify-content-center align-item-center">
 					<div class="project-container">
-						<div class="col-12 titel text-center">
+						<div class="col-12 title text-center">
 							<h2>recent projects</h2>
 						</div>
 						<div class="project-caption text-center">
 							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse<br>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat<br>cupidatat non in culpa qui officia.</p>
 						</div>
 						<div class="row recent-project-images">
-							<div class="recent-project-slider">
-								<div class="col-4">
+							<div class="col-12 recent-project-slider">
+								<div class="item">
 									<div class="recent-image-caption">
 										<figure>
 											<img src="assets/images/shutterstock_68015194.png">
@@ -62,7 +64,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-4">
+								<div class="item">
 									<div class="recent-image-caption">
 										<figure>
 											<img src="assets/images/shutterstock_112371584.png">
@@ -72,7 +74,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-4">
+								<div class="item">
 									<div class="recent-image-caption">
 										<figure>
 											<img src="assets/images/shutterstock_70558099.png">
@@ -92,29 +94,30 @@
 			<section class="creative-photos">
 				<div class="container d-flex justify-content-center align-item-center">
 					<div class="row">
-						<div class="col-5">
+						<div class="col-6">
 							<div class="creative-photos-caption">
-								<div class="titel">
+								<div class="title">
 									<h2>WE ARE CREATIVE<br>PHOTOGRAPHERS</h2>
 								</div>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorin fugiat nulla pariatur. Aque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-								<a href="#"><button>read more</button></a>
+								<a href="#" class="button secondary" title="Read More">read more</a>
 							</div>
 						</div>
-						<div class="col-7">
+						<div class="col-6">
 							<div class="row">
-								<div class="col-6">
-									<div class="col-3">
+								<div class="col-6 left-images">
+									<div class="pb-3">
 										<figure>
 											<img src="assets/images/shutterstock_302587013.png">
 										</figure>
 									</div>
-									<div class="col-3">
-										<figure><img src="assets/images/shutterstock_144961078.png">
+									<div>
+										<figure>
+											<img src="assets/images/shutterstock_144961078.png">
 										</figure>
 									</div>
 								</div>
-								<div class="col-6">
+								<div class="col-6 right-images">
 									<figure>
 										<img src="assets/images/shutterstock_177102815.png">
 									</figure>						
@@ -124,13 +127,103 @@
 					</div>
 				</div>
 			</section>
+
+			<!-- Get In Touch -->
+			<section class="get-in-touch">
+				<div class="container d-flex justify-content-center align-item-center">
+					<div class="row">
+						<div class="col-12">
+							<div class="title text-center">
+								<h2>get in touch</h2>
+								<p>Elit, sed do eiusmod tempor incididunt ut labore et </p>
+							</div>
+						</div>
+						<div class="col-12 d-flex justify-content-center">
+						<div class="container-2">
+						<form>
+							<div class="row">
+								<div class="col-4">
+									<input type="text" name="" placeholder="Name">
+								</div>
+								<div class="col-4">
+									<input type="text" name="" placeholder="Email">
+								</div>
+								<div class="col-4 phone">
+									<input type="text" name="" placeholder="Phone">
+								</div>
+								<div class="col-12">
+									<textarea placeholder="Message"></textarea>
+								</div>
+								<div class="col-12">
+									<input type="submit" value="Send" class="button secondary">
+								</div>
+							</div>
+						</form>
+						</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Testimonials -->
+			<section class="testimonial">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 mb-2">
+							<div class="title text-center">
+								<h2>Testimonials</h2>
+							</div>
+						</div>
+
+						<div class="col-6 mt-4">
+							<div class="row">
+								<div class="col-12 testimonial-slider slider">
+									<div class="item text-center">
+										<i class="left-click fa fa-chevron-left"></i>
+										<div class="testimonial-image-text">
+											<figure>
+												<img src="assets/images/layer5.png">
+											</figure>
+											<div class="col-12">
+												<p>Ut enim ad minim veniam, quis exercitation<br>ullamco laboris nisi ut aliquip ex lorem ea commodo<br> consequat. Duis aute irure pariatur.</p>
+											</div>
+											<div class="col-12">
+												<h3>hirman miller</h3>
+											</div>
+										</div>
+										<i class="right-click fa fa-chevron-right"></i>
+									</div>
+
+									<div class="item text-center">
+										<i class="left-click fa fa-chevron-left"></i>
+										<div class="testimonial-image-text">
+											<figure>
+												<img src="assets/images/layer5.png">
+											</figure>
+											<div class="col-12">
+												<p>Ut enim ad minim veniam, quis exercitation<br>ullamco laboris nisi ut aliquip ex lorem ea commodo<br> consequat. Duis aute irure pariatur.</p>
+											</div>
+											<div class="col-12">
+												<h3>hirman miller</h3>
+											</div>
+										</div>
+										<i class="right-click fa fa-chevron-right"></i>
+									</div>
+
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		
 		</section>
 	
 	</section>
 
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/slick.min.js"></script>
-	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/general.js"></script>
 </body>
 </html>

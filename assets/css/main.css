@@ -46,8 +46,10 @@
 body{ padding:0; margin:0; scroll-behavior:smooth;}
 h1,h2,h3,h4,h5,h6{ margin:0; padding:0}
 figure{ padding:0; margin:0;}
+img{margin: 0; padding: 0;max-width: 100%;max-height: 100%;}
 ul,li{ text-decoration:none; display:inline; margin:0; padding:0;}
-a{ text-decoration:none; transition: all 0.5s;}
+a{ text-decoration:none; text-decoration-line: none;}
+a:hover{text-decoration:none; text-decoration-line: none;}
 p{ margin:0; padding:0}
 
 
@@ -69,31 +71,68 @@ body{
 .container
 {
 	width: 100%;
-	max-width: 1030px;
+	max-width: 1040px;
 	padding: 0px 10px
 }
-.titel:after
+.title
+{
+	padding-bottom: 17px;
+}
+.title:after
 {
 	content:"";
-	position: absolute;
+	margin-top: 22px;
+    display: inline-block;
 	width: 30px;
 	height: 3px;
 	background-color: #dd3b10;
+}
+.button
+{
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #dd3b10;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    padding: 12px 47px;
+    margin-right: 18px;
+    transition: all 0.5s ease; 
+    border: 1px solid #dd3b10;
+}
+.button:hover
+{
+	background-color: #222223;
+	border: 1px solid #fff;
+	color: #fff;
+}
+.button.secondary
+{
+	background-color: #222223;
+	border: 1px solid #fff;
+}
+.button.secondary:hover
+{
+	background-color: #dd3b10;
+	border: 1px solid #dd3b10;
 }
 
 
 /* header section
 ----------------------------*/
-header
+.pageHeader
 {
 	background: transparent;
-	position: absolute;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
 }
-header figure
+.pageHeader figure
 {
 	padding-top: 100px;
-	margin-left: 76px;
 }
+
 
 /* banner section
 ----------------------------*/
@@ -101,44 +140,34 @@ header figure
 {
 	background-color: #212121;
 	padding-top: 75px;
-	padding-left: 21px;
-	margin-bottom: 87px;
 }
 .banner-image
 {
 	position: relative;
+	padding-left: 21px;
+	min-height: 100vh;
 }
-.banner-caption
+.caption
 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-49%, -36%);	
+	transform: translate(-47%, -38%);	
 }
-.banner-caption h1,button
-{
-	color: #fff;
-}
-.banner-caption h1
+.caption .bannerTitle
 {
 	font-size: 70px;
-	letter-spacing: 15.6px;
-	margin-bottom: 55px;
+	letter-spacing: 15.5px;
+	margin-bottom: 62px;
+	color: #fff;
 }
-.banner-caption button
-{
-	background-color: #dd3b10;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    border: none;
-    margin-left: 228px;
-    padding: 9.5px 47px;
-}
+
 
 /* recent project section
 ----------------------------*/
-.project-bg
+.recent-project
 {
+	padding-top: 87px;
 	background-color: #fff;
 }
 .project-container
@@ -146,15 +175,12 @@ header figure
 	width: 100%;
 	max-width: 830px;
 }
-.project-container .titel h2
-{ 
-	margin-left: 21px;
-	letter-spacing: -1px;
-	padding-bottom: 22px;
+.project-container .title *:last-child
+{
+	margin-bottom: 0px;
 }
 .project-container .project-caption p
 {
-	padding-top: 25px;
 	font-size: 16px;
 	line-height: 28px;
 	color: #3d4347;
@@ -162,19 +188,19 @@ header figure
 }
 .recent-project-images
 {
-	margin-bottom: 124px;
+	margin-bottom: 139px;
 }
-.recent-image-caption figure img
+.recent-image-caption
 {
-	width: 100%;
 	position: relative;
+	width: 100%;
 }
 .image-caption
 {
 	position:absolute; 
 	color:white; 
 	bottom: 0px;
-	width: 89.5%; 
+	width: 98.6%; 
 	background:rgba(29, 28, 41, 1.0); 
 	height:40px; 
 }
@@ -185,24 +211,149 @@ header figure
 }
 
 
-
-/* creative-photos section */
+/* Creative-Photos Section
+----------------------------*/
 
 .creative-photos
 {
 	background-color: #222223;
+	padding-bottom: 100px;
 }
 .creative-photos .container
 {
 	padding-top: 93px;
 }
-.creative-photos-caption h2,p,button
+
+.creative-photos-caption h2,.creative-photos-caption p
 {
 	color: #fff;
 }
-
-.creative-photos-caption button
+.creative-photos-caption p
 {
-	border: 1px solid #fff;
-	background-color: 
+	line-height: 28px;
+	font-size: 16px;
+	margin-bottom: 30px;
+	width: 87%;
 }
+.left-images
+{
+	margin-right: -5px;
+}
+.right-images
+{
+	margin-left: -11px;
+}
+
+
+/* Get In Touch Section
+----------------------------*/
+
+.get-in-touch
+{
+	background-color: #fff;
+	padding-bottom: 100px;
+}
+.get-in-touch .container
+{
+	padding-top: 93px;
+}
+.get-in-touch .container .titel h2
+{
+	padding-bottom: 15px;
+}
+.get-in-touch .container .titel p
+{
+	color: #000;
+	padding-bottom: 34px;
+}
+.get-in-touch .container form input,textarea
+{
+	width: 100%;
+	padding: 7px 13px;
+	border: 1px solid #000;
+}
+textarea
+{
+	height: 140px;
+	margin-bottom: 3px;
+}
+.get-in-touch .container-2 form .phone
+{
+	padding-bottom: 10px;
+}
+.get-in-touch .container-2 form
+{
+	padding-top: 43px;
+}
+.get-in-touch .container-2 form .submit-but
+{
+	border: none;
+	text-transform: uppercase;
+	background-color: #222223;
+	color: #fff;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+
+/* Testimonials Section
+----------------------------*/
+
+.testimonial
+{
+	background-image: url("../images/layer4.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 93px 0px;
+}
+.testimonial .titel h2
+{
+	padding-bottom: 33px;
+}
+.testimonial-image-text
+{
+	padding-top: 50px;
+	padding-bottom: 64px;
+	background-color: #2e2e2e;
+	color: #fff;
+}
+.testimonial-image-text p
+{
+	margin-bottom: 28px;
+}
+.testimonial-image-text figure
+{
+	display: inline-block;
+}
+.testimonial-image-text img
+{
+	border-radius: 50%;
+	margin-bottom: 40px;
+}
+.testimonial-image-text h3
+{
+	font-size: 16px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-family: 'Quicksand';
+	font-weight: 700;
+}
+.right-click
+{
+	position: absolute;
+	right: 10%;
+	top: 10%;
+	z-index: 10;
+}
+/*.slick-prev:before
+{
+	content: "\f053";
+	color: #000;
+	font-size: 20px;
+}
+.slick-next:before
+{
+	content: "\f054";
+	color: #000;
+	font-size: 20px;
+}*/
